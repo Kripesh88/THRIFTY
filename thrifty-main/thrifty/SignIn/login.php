@@ -10,7 +10,7 @@
 <body>
 <?php
 include_once ("../Navbar/navbar.html");
-include("../footer/footer.html");
+
 ?>
 
     
@@ -62,4 +62,6 @@ include("../footer/footer.html");
 
     
 </body>
+
+
 </html>
