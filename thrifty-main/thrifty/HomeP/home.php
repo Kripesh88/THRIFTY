@@ -10,7 +10,7 @@
 
    <title>THRIFTY</title>
 
-   <link rel="stylesheet" href="kri.css" type="text/css" media="all" />
+   <link rel="stylesheet" href="./homeP.css" type="text/css" media="all" />
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FontName" />
 
 
@@ -22,73 +22,10 @@
 
 <body>
 
+<?php
+include_once ("../Navbar/navbar.html");
 
-
-   <nav class="Navigation">
-
-
-
-      <a href="#" class="logo">Thrifty</a>
-
-
-
-
-
-      <ul class="Menu">
-
-
-
-         <li><a href="#" class="active">Home</a></li>
-
-         <li><a href="Shop">Shop</a></li>
-
-         <li><a href="Products">Product</a></li>
-
-         <li><a href="Contacts">Contacts</a></li>
-
-
-
-      </ul>
-
-
-
-      <div class="right-elements">
-
-
-
-         <a href="#" class="search">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-         </a>
-
-
-
-         <a href="#" class="cart">
-
-            <i class="fa-solid fa-cart-shopping"></i>
-
-         </a>
-
-
-
-
-
-
-         <a id="user" href="/thrifty-main/thrifty/login.html?" class="user">
-
-            <i class="fa-solid fa-user"></i>
-
-         </a>
-
-         <a href="#" class="love">
-            <i class="fa-solid fa-heart"></i>
-         </a>
-      </div>
-
-   </nav>
-
-
+?>
 
    <section id="main">
 
@@ -106,7 +43,7 @@
 
             <p>Place your order at reasonable price with proper quality and in affordable price</p>
 
-            <a href="#">Shop now</a>
+            <a href="#">Shop Now</a>
 
          </div>
 
@@ -380,7 +317,7 @@
 
       <div class="banner-text">
 
-         <strong>Beautiful Daura suruwal</strong>
+         <strong>Beautiful Daura Suruwal</strong>
 
          <span>From RS 15000 </span>
 
@@ -769,7 +706,7 @@
 
 
 
-   <!-- <section id="banner" class="banner-reverse">
+   <section id="banner" class="banner-reverse">
 
   
 
@@ -779,7 +716,7 @@
 
    <span>From RS600</span>
 
-   <p>reasonable and very affordable.This is only for you so pick your fav and order for quickly. </p>
+   <p>Reasonable and very affordable.This is only for you so pick your fav and order for quickly. </p>
 
    <a href="#">Order Now</a>
 
@@ -795,7 +732,7 @@
 
   
 
- </section> -->
+ </section><br>
 
 
 
@@ -890,101 +827,12 @@
    </section>
 
 
-   <footer>
-
-      <div class="footer-container">
-
-         <div class="footer-logo-container">
-
-            <div class="footer-logo">thrifty</div>
-
-
-
-            <div class="footer-social">
-
-               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-
-               <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-               <a href="#"><i class="fa-brands fa-facebook"></i></a>
-
-               <a href="#"><i class="fa-brands fa-twitter"></i></a>
-
-            </div>
-
-         </div>
-
-
-
-         <div class="footer-menu">
-
-
-
-            <div class="footer-menu-box">
-
-               <strong>product</strong>
-
-               <ul>
-
-                  <li><a href="#">Women's latest cloth</a></li>
-
-                  <li><a href="#">Men's latest cloth</a></li>
-
-                  <li><a href="#">Kids latest cloth</a></li>
-
-               </ul>
-
-            </div>
-
-            <div class="footer-menu">
-
-
-
-               <div class="footer-menu-box">
-
-                  <strong>product</strong>
-
-                  <ul>
-
-                     <li><a href="#">Women's latest cloth</a></li>
-
-                     <li><a href="#">Men's latest cloth</a></li>
-
-                     <li><a href="#">Kids latest cloth</a></li>
-
-                  </ul>
-
-               </div>
-
-               <div class="footer-menu">
-
-
-
-                  <div class="footer-menu-box">
-
-                     <strong>Product</strong>
-
-                     <ul>
-
-                        <li><a href="#">Women's latest cloth</a></li>
-
-                        <li><a href="#">Men's latest cloth</a></li>
-
-                        <li><a href="#">Kids latest cloth</a></li>
-
-                     </ul>
-
-                  </div>
-
-               </div>
-
-
-
-            </div>
-
-
-   </footer>
+   
    <script src="./session.js"></script>
 </body>
+<?php
+include("../footer/footer.html");
+?>
+
 
 </html>

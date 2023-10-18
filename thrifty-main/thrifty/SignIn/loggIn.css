@@ -9,7 +9,7 @@ body{
     justify-content: center;
    min-height: 100vh;
    align-items: center;
-  background-image: url("ss.jpg");
+  background-image: url("../Images/newbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -41,7 +41,7 @@ body{
       outline: none;
       border: 2px solid rgba(255,255,255,.2);
       border-radius:40px ;
-      font-size: 16px;
+      font-size: 15px;
       color: #fff;
       padding: 20px 45px 20px 20px;
 }
@@ -79,11 +79,11 @@ body{
     
 }
 .wrapper .btn:hover{
-    background-color: orange;
+    background-color: #e74444;
 
 }
 .wrapper .register-link{
-    font-size: 15px;
+    font-size: 18px;
 text-decoration: none;
 font-weight: 800;
 margin-top: 30px;
@@ -91,7 +91,7 @@ text-align: center;
 
 }
 .register-link p a{
-    color: #fff;
+    color: #e74444;
     text-decoration: none;
     font-weight: 600;
 }

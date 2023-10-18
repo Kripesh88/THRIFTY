@@ -1,19 +1,29 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
       <title>Registration</title>
-      <link rel="stylesheet" href="reg.css">
+      <link rel="stylesheet" href="./reg.css">
   
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
+
+
+
       <div class="container">
          <header>Signup Form</header>
+         <?php
+         if (isset($_GET['success'])) {
+            echo "<div class='inserted'>Registration successful. Please Log in to Continue</div>";
+        }
+        ?> 
          
-         <h3>Do you have an account??
-         <a href="">Sign In</a>
+         <h3>Have an account ?
+         <a href="../SignIn/logIn.php">Log in now</a>
          </h3>
          
          <div class="progress-bar">
@@ -55,22 +65,23 @@
             </div>
          </div>
          <div class="form-outer">
-            <form action="#">
+            <form method="POST" action="save.php">
                <div class="page slide-page">
                   <div class="title">
                      Basic Info:
                   </div>
                   <div class="field">
                      <div class="label">
-                        First Name
+                        <label for="First Name"> First Name</label>
+      
                      </div>
-                     <input type="text" required>
+                     <input type="text" name="Fname"/>
                   </div>
                   <div class="field">
                      <div class="label">
                         Last Name
                      </div>
-                     <input type="text" required>
+                     <input type="text" name="Lname"/>
                   </div>
                   <div class="field">
                      <button class="firstNext next">Next</button>
@@ -80,17 +91,19 @@
                   <div class="title">
                      Contact Info:
                   </div>
+                  
                   <div class="field">
                      <div class="label">
                         Email Address
                      </div>
-                     <input type="text" required>
+                     <input type="email" name="email"/>
+
                   </div>
                   <div class="field">
                      <div class="label">
                         Phone Number
                      </div>
-                     <input type="text" required>
+                     <input type="tel" name="phoneNo"/>
                   </div>
                   <div class="field btns">
                      <button class="prev-1 prev">Previous</button>
@@ -105,17 +118,18 @@
                      <div class="label">
                         Date
                      </div>
-                     <input type="date" required>
+                     <input type="date" name="dob"/>
                   </div>
                   <div class="field">
                      <div class="label">
                         Gender
                      </div>
-                     <select>
+                     <select name='gender'>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
                      </select>
+                     
                   </div>
                   <div class="field btns">
                      <button class="prev-2 prev">Previous</button>
@@ -130,13 +144,13 @@
                      <div class="label">
                         Username
                      </div>
-                     <input type="text" required>
+                     <input type="text" name="uname"/>
                   </div>
                   <div class="field">
                      <div class="label">
                         Password
                      </div>
-                     <input type="password" required>
+                     <input type="password" name="pwd"/>
                   </div>
                   <div class="field btns">
                      <button class="prev-3 prev">Previous</button>
@@ -147,5 +161,8 @@
          </div>
       </div>
       <script src="reg.js"></script>
+    
+   </main>
    </body>
+  
 </html>
