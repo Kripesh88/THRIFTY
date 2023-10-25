@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-include_once ("../Navbar/navbar.html");
+include_once ("../NAVBAR/navbar.php");
 
 ?>
 
@@ -57,11 +57,8 @@ include_once ("../Navbar/navbar.html");
 
     
     </div>
-    <script>
+        <!-- <script> -->
         
+        </body>
+        </html>
 
-    
-</body>
-
-
-</html>
