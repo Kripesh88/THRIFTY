@@ -163,7 +163,7 @@ align-items: center;
 
 .right-elements a{
 
-margin: 0px 10px;
+margin: 10px;
 
 }
 
@@ -180,7 +180,9 @@ color: blue;
 transition: all ease 0.3s;
 
 }
-
+.right-elements .search{
+   display: flex;
+    }
 .right-elements .srch {
     font-family: 'Times New Roman';
     width: 200px;
@@ -189,22 +191,45 @@ transition: all ease 0.3s;
     border: 1px solid #e74444;
     margin-top: 0px;
     margin-bottom: 5px;
-    border-right: none;
+    /* border-right: none; */
     font-size: 16px;
     float: left;
     padding: 2px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px
   }
-  
 
-  .right-elements button {
-  float: left;
-  width: 25px;
-  padding: 10px;
-  background: transparent;
-  border-color: transparent;
-}
+  .right-elements .btn i{
+      color: white;
+   }
+  
+  .right-elements .btn {
+     width: 80px;
+     height: 35px;
+     background: #e74444;
+     border: 1px solid #e74444;
+     margin-top: 0px;
+     margin-bottom: 5px;
+     color: #fff;
+     font-size: 15px;
+     border-bottom-right-radius: 10px;
+     border-top-right-radius: 10px;
+     border-top-left-radius: 2px;     
+     border-bottom-left-radius: 2px;     
+     cursor: pointer;
+     margin-left: -10px; 
+   }
+   .right-elements .btn:hover{
+     color: blue;
+   }
+   .right-elements .btn:focus{
+     outline: none;
+   }
+   
+   .right-elements .srch:focus{
+     outline: none;
+   }
+  
 
 .cart{
    position:relative;
@@ -273,10 +298,10 @@ transition: all ease 0.3s;
 
 
 
-         <a href="#" class="search">
-         <input class="srch" type="search" name="" placeholder="   Search in Thrifty" style="margin:auto;max-width:300px">
-         <button><i class="fa-solid fa-magnifying-glass"></i></button>  
-            <!-- <a href="#"> <button class="srch">Search</button></a> -->
+         <a class="search">
+         <input class="srch" type="search" name="" placeholder="   Search in Thrifty" >
+         <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>  
+            
 
          </a>
 
