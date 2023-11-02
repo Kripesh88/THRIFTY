@@ -21,9 +21,17 @@
 
 
 <body>
-
 <?php
-include_once ("../Navbar/navbar.html");
+include_once ("../Navbar/navbar.php");
+
+// session_start();
+// session_destroy();   //item feri first dekhi halera check garnuparey ma destroy gardai use garne.
+
+?>
+
+
+<?php  
+print_r($_SESSION['cart']);
 
 ?>
 
@@ -132,7 +140,7 @@ include_once ("../Navbar/navbar.html");
 
 
          <div class="feature-product-box">
-
+               <form action="manageCART.php" method="post">
 
 
             <div class="product-feature-img">
@@ -156,24 +164,26 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+               
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Jordan">
+                  <input type="hidden" name="Price" value="3500">
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
-            </div>
+            </form>
+              
+         </div>
 
          </div>
 
          <div class="feature-product-box">
 
-
+            <form action="manageCART.php" method="post">
 
             <div class="product-feature-img">
 
@@ -195,18 +205,23 @@ include_once ("../Navbar/navbar.html");
 
                </div>
 
-
+                  
+               
 
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Pants">
+                  <input type="hidden" name="Price" value="500">
 
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>  
+             
             </div>
 
          </div>
@@ -215,7 +230,7 @@ include_once ("../Navbar/navbar.html");
 
          <div class="feature-product-box">
 
-
+               <form action="manageCART.php" method="post"> 
 
             <div class="product-feature-img">
 
@@ -238,17 +253,21 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+               
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Wallet">
+                  <input type="hidden" name="Price" value="400">
+
 
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+              
             </div>
 
          </div>
@@ -258,7 +277,7 @@ include_once ("../Navbar/navbar.html");
          <div class="feature-product-box">
 
 
-
+               <form action="manageCART.php" method="post">
             <div class="product-feature-img">
 
                <img
@@ -282,21 +301,22 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+               
                <div class="cart-like">
 
 
 
-                  <a href="#">
-
-                     <i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Joggers">
+                  <input type="hidden" name="Price" value="900">
 
                   <a href="#">
 
                      <i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+             
             </div>
 
          </div>
@@ -355,7 +375,7 @@ include_once ("../Navbar/navbar.html");
 
 
          <div class="feature-product-box">
-
+            <form action="manageCART.php" method="post">
 
 
             <div class="product-feature-img">
@@ -379,24 +399,27 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+               
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Denim Jeans">
+                  <input type="hidden" name="Price" value="600">
 
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+               
             </div>
 
          </div>
 
          <div class="feature-product-box">
 
-
+            <form action="manageCART.php" method="post">
 
             <div class="product-feature-img">
 
@@ -419,17 +442,21 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+              
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Bags">
+                  <input type="hidden" name="Price" value="600">
+                  
 
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+             
             </div>
 
          </div>
@@ -437,7 +464,7 @@ include_once ("../Navbar/navbar.html");
 
 
          <div class="feature-product-box">
-
+            <form action="manageCART.php" method="post">
 
 
             <div class="product-feature-img">
@@ -461,17 +488,20 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
+              
                <div class="cart-like">
 
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Belts">
+                  <input type="hidden" name="Price" value="800">  
 
 
 
                   <a href="#"><i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+              
             </div>
 
          </div>
@@ -480,7 +510,7 @@ include_once ("../Navbar/navbar.html");
 
          <div class="feature-product-box">
 
-
+            <form action="manageCart.php" method="post">
 
             <div class="product-feature-img">
 
@@ -503,21 +533,20 @@ include_once ("../Navbar/navbar.html");
                </div>
 
 
-
                <div class="cart-like">
 
 
-
-                  <a href="#">
-
-                     <i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Slippers">
+                  <input type="hidden" name="Price" value="800">
 
                   <a href="#">
 
                      <i class="fa-regular fa-heart"></i></a>
 
                </div>
-
+               </form>
+          
             </div>
 
          </div>
@@ -536,7 +565,7 @@ include_once ("../Navbar/navbar.html");
 
       <div class="feature-product-box">
 
-
+         <form action="manageCART.php" method="post">
 
          <div class="product-feature-img">
 
@@ -552,31 +581,33 @@ include_once ("../Navbar/navbar.html");
 
             <div class="product-feature-text">
 
-               <strong>Pants</strong>
+               <strong>Pants(Female)</strong>
 
                <span>Rs.500</span>
 
             </div>
 
 
-
             <div class="cart-like">
 
-               <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Pants(Female)">
+                  <input type="hidden" name="Price" value="500">
 
 
 
                <a href="#"><i class="fa-regular fa-heart"></i></a>
 
             </div>
-
+            </form>
+            
          </div>
 
       </div>
 
       <div class="feature-product-box">
 
-
+            <form action="manageCART.php" method="post">
 
          <div class="product-feature-img">
 
@@ -599,17 +630,19 @@ include_once ("../Navbar/navbar.html");
             </div>
 
 
-
             <div class="cart-like">
 
-               <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+               <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Nike">
+                  <input type="hidden" name="Price" value="600">
 
 
 
                <a href="#"><i class="fa-regular fa-heart"></i></a>
 
             </div>
-
+            </form>
+            
          </div>
 
       </div>
@@ -617,7 +650,7 @@ include_once ("../Navbar/navbar.html");
 
 
       <div class="feature-product-box">
-
+         <form action="manageCART.php" method="post">
 
 
          <div class="product-feature-img">
@@ -641,17 +674,20 @@ include_once ("../Navbar/navbar.html");
             </div>
 
 
-
+            <
             <div class="cart-like">
 
-               <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Green Pants">
+                  <input type="hidden" name="Price" value="350">
 
 
 
                <a href="#"><i class="fa-regular fa-heart"></i></a>
 
             </div>
-
+            </form>
+            
          </div>
 
       </div>
@@ -660,7 +696,7 @@ include_once ("../Navbar/navbar.html");
 
       <div class="feature-product-box">
 
-
+         <form action="manageCART.php" method="post">
 
          <div class="product-feature-img">
 
@@ -671,36 +707,36 @@ include_once ("../Navbar/navbar.html");
          </div>
 
 
-
+         
          <div class="product-feature-text-container">
-
+            
             <div class="product-feature-text">
-
-               <strong>Used shoes</strong>
-
+               
+               <strong>Used Shoes</strong>
+               
                <span>From Rs.350</span>
-
+               
             </div>
-
-
-
+            
+            
+            
             <div class="cart-like">
-
-
-
-               <a href="#">
-
-                  <i class="fa-solid fa-cart-shopping"></i></a>
-
-               <a href="#">
-
-                  <i class="fa-regular fa-heart"></i></a>
-
+               
+                  <button type="submit" name="Add_To_Cart" class="round-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <input type="hidden" name="Item_Name" value="Used Shoes">
+                  <input type="hidden" name="Price" value="350">
+               
+                     <a href="#">
+                        
+                        <i class="fa-regular fa-heart"></i></a>
+                        
+                     </div>
+                     </form>
+                  
+                
+               </div>
+               
             </div>
-
-         </div>
-
-      </div>
 
    </div>
 

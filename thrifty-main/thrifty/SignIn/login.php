@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-include_once ("../Navbar/navbar.html");
+include_once ("../Navbar/navbar.php");
 
 ?>
 

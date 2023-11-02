@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .container {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        color: #383838;
+        padding: 10px 40px;
+        border-radius: 6px;
+    }
+
+    .pagination ul {
+        margin: 20px 30px;
+
+    }
+
+    .pagination ul li {
+        display: inline-block;
+        margin: 0 10px;
+        background: #ece5e5;
+        width: 45px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 45px;
+        cursor: pointer;
+        background-position: 0 -45px;
+        transition: background-position 0.5s;
+
+    }
+
+    .pagination ul li.active {
+        color: #fff;
+        background-image: linear-gradient(#ff4568, #ff4568);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+
+    }
+
+    .btn1,
+    .btn2 {
+        display: inline-flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 200;
+        color: #383838;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .btn1 img {
+        width: 24px;
+        margin-right: 15px;
+    }
+
+    .btn2 img {
+        width: 24px;
+        margin-right: 15px;
+        transform: rotate(180deg);
+
+    }
+</style>
+</body>
+<div class="container">
+    <div class="pagination">
+        <button class="btn1" onclick="backbtn(event)"><img src="../Images/arrow.png">prev</button>
+        <ul>
+            <li class="link active" onclick="activeLink(event)" value="1">1</li>
+            <li class="link" onclick="activeLink(event)" value="2">2</li>
+            <li class="link" onclick="activeLink(event)" value="3">3</li>
+            <li class="link" onclick="activeLink(event)" value="4">4</li>
+            <li class="link" onclick="activeLink(event)" value="5">5</li>
+            <li class="link" onclick="activeLink(event)" value="6">6</li>
+        </ul>
+        <button class="btn2" onclick="nextbtn(event)">next<img src="../Images/arrow.png"></button>
+    </div>
+</div>
+<script>
+    let link = document.getElementsByClassName("link");
+
+    let currrentValue = 1;
+    function activeLink(event) {
+        for (l of link) {
+            l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currrentValue = event.target.getAttribute("value");
+    }
+
+    function backbtn(event) {
+        if (currrentValue > 1) {
+            for (l of link) {
+                l.classList.remove("active");
+            }
+            currrentValue--;
+            link[currrentValue - 1].classList.add("active");
+        }
+    }
+
+    function nextbtn(event) {
+        if (currrentValue < 6) {
+            for (l of link) {
+                l.classList.remove("active");
+            }
+            currrentValue++;
+            link[currrentValue - 1].classList.add("active");
+        }
+    }
+</script>
+
+</html>

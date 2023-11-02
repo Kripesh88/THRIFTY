@@ -195,57 +195,74 @@
    
     }
    
-    .cart-like a{
-   
-     width: 35px;
-   
-     height: 35px;
-   
-     display: flex;
-   
-     justify-content: center;
-   
-     align-items: center;
-   
-     border-radius: 50%;
-   
-     border: 1px solid #747474;
-   
-     margin: 0px 3px;
-   
-     font-size: 0.9rem;
-   
-    }
-   
+    .cart-like a,button{
+  
+      width: 35px;
     
-   
-    .cart-like a i{
-   
-     color: #2c2c2c;
-   
-    }
-   
+      height: 35px;
     
-   
-    .cart-like a:hover{
-   
-     background-color: Red;
-   
-     transition: all ease 0.2s;
-   
-    }
-   
+      display: flex;
     
-   
-    .cart-like a:hover i{
-   
-     color: #ffffff;
-   
-     transition: all ease 0.3s;
-   
-    }
-
-
+      justify-content: center;
+    
+      align-items: center;
+    
+      border-radius: 50%;
+    
+      border: 1px solid #747474;
+    
+      margin: 0px 3px;
+    
+      font-size: 0.9rem;
+      
+      background-color: transparent;
+    
+     }
+    
+     
+    
+     .cart-like a i{
+    
+      color: #2c2c2c;
+    
+     }
+    
+     
+    
+     .cart-like a:hover{
+    
+      background-color: #cf2728;
+    
+      transition: all ease 0.2s;
+    
+     }
+    
+     
+    
+     .cart-like a:hover i{
+    
+      color: #ffffff;
+    
+      transition: all ease 0.3s;
+    
+     }
+     
+  
+  
+     .cart-like button:hover{
+      background-color: #cf2728;
+    
+      transition: all ease 0.2s;
+  
+     }
+  
+     .cart-like button:hover i{
+    
+      color: #ffffff;
+    
+      transition: all ease 0.3s;
+    
+     }
 
     
 #feature-product{
