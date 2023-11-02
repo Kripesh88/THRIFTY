@@ -51,7 +51,7 @@ include("../Navbar/navbar.php");
             <tr>
                 <td>$sr</td>
                 <td>$value[Item_Name]</td>
-                <td>$value[Price]</td>
+                <td>Rs.$value[Price]</td>
                 <td><input class='text-center' type='number' value='$value[Quantity]' min='1' max='20'></td>
                 <td>
                 <form action='manageCART.php' method='POST'>
@@ -79,6 +79,7 @@ include("../Navbar/navbar.php");
            <h4>Total: </h4>
             <h5 class="text-center">
                 <?php
+                echo "Rs.";
                 echo $total;
 
                 ?>
