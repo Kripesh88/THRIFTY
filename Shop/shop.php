@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" href="shop.css" type="text/css" media="all" />
 
-  <script src="https://kit.fontawesome.com/31e4361ee7.js" crossorigin="anonymous"></script>
+  <script src="shop.js" crossorigin="anonymous"></script>
+ 
 </head>
 
 <body>
@@ -48,7 +49,7 @@
               <input type="hidden" name="Item_Name" value="Unique Collection">
                   <input type="hidden" name="Price" value="350.00">
 
-              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <button type="submit" id="like-icon" class="round-button"><i class="fa-regular fa-heart"></i></button>
             </div>
           </div>
       </div>
@@ -455,6 +456,8 @@
     </div>
   </div>
 </body>
+
+
 
 <?php
 include("../pagination/pagination.html");

@@ -171,8 +171,8 @@ print_r($_SESSION['cart']);
                   <input type="hidden" name="Item_Name" value="Jordan">
                   <input type="hidden" name="Price" value="3500">
 
-
-                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+         
+                  <button type="submit" name="Add_Like" class="round-button"><i class="fa-regular fa-heart"></i></button>
 
                </div>
             </form>

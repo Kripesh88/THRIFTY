@@ -60,7 +60,7 @@ include_once ("../Navbar/navbar.php");
     <script>
         
 
-    
+    </script>
 </body>
 
 

@@ -342,6 +342,10 @@ transition: all ease 0.3s;
 
          </a>
 
+         
+
+         
+
          <a href="#" class="love">
             <i class="fa-solid fa-heart"></i>
          </a>
